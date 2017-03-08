@@ -1,0 +1,21 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Infinite loop form </title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<form name = 'myform'>
+  <div class='form-block'>
+    <span class='line'>1</span>
+    <button type="button" class='new-line' onclick="newLine(this,false);">New Line</button>
+    <button type="button" class='new-nested' onclick="newLine(this,true);">New Nested Line</button>
+    <input type='text' class="input" placeholder='Enter Value...'>
+    <button type="button" class='new-input' onclick="addInput(this);">Add input</button>
+  </div>
+</form>
+<div id="new_line"></div>
+<script src="script.js"></script>
+</body>
+</html>
